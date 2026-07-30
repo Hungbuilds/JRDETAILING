@@ -800,9 +800,14 @@
   html.a11y-underline a{text-decoration:underline !important; text-underline-offset:2px;}
   html.a11y-reduce-motion *{animation:none !important; transition:none !important;}
 
+  @media (max-width:700px){
+    .a11y-fab{bottom:calc(70px + env(safe-area-inset-bottom) + 14px);}
+    .a11y-panel{bottom:calc(70px + env(safe-area-inset-bottom) + 74px);}
+  }
+
   @media (max-width:480px){
-    .a11y-fab{left:16px; bottom:16px; width:48px; height:48px;}
-    .a11y-panel{left:16px; bottom:76px;}
+    .a11y-fab{left:16px; width:48px; height:48px;}
+    .a11y-panel{left:16px;}
   }
 
   /* ---------- Before/After Slider ---------- */
